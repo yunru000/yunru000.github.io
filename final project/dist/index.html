@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Map of glasgow city centre restaurant</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+  
+  <!-- Mapbox JS API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'>
+  </script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    /* 隐藏默认 radio */
+    input[type="radio"] {
+      display: none;
+    }
+    label {
+    display: inline-block;
+    padding: 3.5px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  /* 当 radio 被选中时，label 变化 */
+  
+    label {
+      font-size: 25px; /* 控制 emoji 大小 */
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      margin-right: 20px; /* 设置间距 */
+    }
+    /* 垂直排列 */
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      margin: 9px 0; /* 设置每个选项之间的间距 */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+ 
+  </div>
+
+<!--The menu element contains 10 radio buttons-->
+<div id="menu">
+<h3>Map of glasgow city centre restaurant</h3>
+<label class="container">American cuisine
+<input id="style_American" type="radio" checked="checked" name="radio">🍔 
+<span class="checkmark"></span>
+</label>
+<label class="container">British cuisine
+<input id="style_British" type="radio" name="radio">🥓
+<span class="checkmark"></span>
+</label>
+ <label class="container">Chinese cuisine
+<input id="style_Chinese" type="radio" name="radio">🥟
+<span class="checkmark"></span>
+</label>
+ <label class="container">German cuisine
+<input id="style_German" type="radio" name="radio">🍖
+<span class="checkmark"></span>
+ </label>
+ <label class="container">Japanese cuisine
+<input id="style_Japanese" type="radio" name="radio">🍣
+<span class="checkmark"></span>
+</label>
+ <label class="container">Indian cuisine
+<input id="style_Indian" type="radio" name="radio">🍛
+<span class="checkmark"></span>
+</label> 
+  <label class="container">Italian cuisine
+<input id="style_Italian" type="radio" name="radio">🍕
+<span class="checkmark"></span>
+</label>
+  <label class="container">Korean cuisine
+<input id="style_Korean" type="radio" name="radio">🍡
+<span class="checkmark"></span>
+</label>
+  <label class="container">Greek cuisine
+<input id="style_Greek" type="radio" name="radio">🌯
+<span class="checkmark"></span>
+</label>
+  <label class="container">Mexican cuisine
+<input id="style_Mexican" type="radio" name="radio">🌮
+<span class="checkmark"></span>
+</label>
+  <label class="container">All
+<input id="style_All" type="radio" name="radio">
+<span class="checkmark"></span>
+</label>
+</div>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
